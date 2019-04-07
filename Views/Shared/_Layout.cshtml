@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Company Tenshi", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li>@Html.ActionLink("Funciones básicas", "FuncionesBasicas", "Home", new { target = "_blank" })</li>
+                    <li>@Html.ActionLink("Mantenimiento", "Mantenimiento", "Home", new { target = "_blank" })</li>
+                    <li>@Html.ActionLink("Otros", "Otros", "Home", new { target = "_blank" })</li>*@
+                    <li><a class="" href="/Home/FuncionesBasicas" target="_blank">Funciones básicas</a></li>
+                    <li><a class="" href="/Home/Mantenimiento" target="_blank">Mantenimiento</a></li>
+                    <li><a class="" href="/Home/Otros" target="_blank">Otros</a></li>
+                    @*<li>@Html.ActionLink("Empleado", "Index", "Empleado")</li>
+                    <li>@Html.ActionLink("Salida", "Index", "Salida")</li>
+                    <li>@Html.ActionLink("Cargos", "Index", "Cargo")</li>
+                    <li>@Html.ActionLink("Departamentos", "Index", "Departamento")</li>
+                    <li>@Html.ActionLink("Vacaciones", "Index", "Vacaciones")</li>
+                    <li>@Html.ActionLink("Permisos", "Index", "Permiso")</li>
+                    <li>@Html.ActionLink("Licencias", "Index", "Licencia")</li>
+                    <li>@Html.ActionLink("Nomina", "Index", "Nomina")</li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>
+                &copy; @DateTime.Now.Year Angel Maria Perez - Germa<a class="clase-a" href="https://thumbs.gfycat.com/IllfatedPleasantEthiopianwolf-size_restricted.gif">A</a>f
+                <img align="right" src="https://i.ibb.co/vvMrMvc/gg-1.png" alt="gg-1" border="0">
+            </p>
+        </footer>
+    </div>
+    <style type="text/css">
+        .clase-a {
+            color: #333333;
+        }
+    </style>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
